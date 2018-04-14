@@ -10,6 +10,12 @@ import Foundation
 
 class MontyHallParadox
 {
+    static let sharedInstance = MontyHallParadox()
+    
+    private init()
+    {
+    }
+    
     func paradox () -> String
     {
         // моя первоночально выбранная дверь
